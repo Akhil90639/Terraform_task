@@ -2,8 +2,8 @@
 
 provider "aws" {
   region     = "us-east-2"
-  access_key = "AKIAV2EKYO53NLVHWZGS"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # Creating VPC
@@ -78,7 +78,7 @@ resource "aws_instance" "instance-1" {
   associate_public_ip_address = true
 
   root_block_device {
-    volume_size = 8
+    volume_size = 5
     volume_type = "gp2"
     encrypted   = false
   }
